@@ -7,10 +7,8 @@ Turn STL files into voxels, images, and videos
 
 ### How to run
 ```
-git clone https://github.com/rcpedersen/stl-to-voxel.git
+git clone https://github.com/chandru2erode/Additive-Manufacturing-Flaw-Detection-System.git
 $ cd stl-to-voxel
-$ python3 stltovoxel.py ~/path/to/file.stl ~/path/to/output.png
+$ python3 stltovoxel.py -i <INPUT FOLDERNAME> -o <OUTPUTFOLDERNAME 
 ```
-### Example: 
-![alt text](https://github.com/rcpedersen/stl-to-voxel/raw/master/stanford_bunny.png "STL version of the stanford bunny")
-![alt text](https://github.com/rcpedersen/stl-to-voxel/raw/master/stanford_bunny.gif "voxel version of the stanford bunny")
+
