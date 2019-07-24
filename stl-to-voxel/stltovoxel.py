@@ -126,9 +126,22 @@ def fileExtraction(PATH, inputString):
         os.chdir(os.path.join(filePattern, "input"))
         print(os.getcwd())
         print("Processing file {} ................".format(filePattern))
-        doExport(elem, output, 100, filePattern)
-    
+        if os.stat(elem).st_size != 0:
+            try:
+                doExport(elem, output, 100, filePattern)
+            except UnicodeDecodeError:
+                for i in range(2):
+                os.chdir("..")
+                pass
+            except ValueError:
+            for i in range(2):
+                os.chdir("..")
+            pass
+        else:
+            for i in range(2):
+                os.chdir=("..")
 
+                
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Convert STL files to voxels')
     parser.add_argument('-i', "--string1", type = str, required = True)
