@@ -131,7 +131,7 @@ def fileExtraction(PATH, inputString):
                 doExport(elem, output, 100, filePattern)
             except UnicodeDecodeError:
                 for i in range(2):
-                os.chdir("..")
+                    os.chdir("..")
                 pass
             except ValueError:
             for i in range(2):
